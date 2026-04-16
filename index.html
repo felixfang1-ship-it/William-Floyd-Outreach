@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Micro-CT Vocabulary Matching Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Micro-CT Vocabulary Matching Game</h1>
+      <p>Match each vocabulary word to its correct definition.</p>
+    </header>
+
+    <main>
+      <section class="game-board">
+        <div class="panel">
+          <h2>Vocabulary</h2>
+          <div id="terms" class="list"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Definitions</h2>
+          <div id="definitions" class="list"></div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <p id="status">Choose one vocabulary word and one definition to make a match.</p>
+        <div class="button-row">
+          <button id="submitBtn">Submit Game</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </section>
+
+      <section id="resultCard" class="results hidden">
+        <h2>Your Score</h2>
+        <p id="scoreText"></p>
+        <div id="wrongAnswers"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
